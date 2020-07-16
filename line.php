@@ -59,7 +59,11 @@ if ( sizeof($request_array['events']) > 0 )
 	   if($text == "ใบอนุญาตขายสุราของฉันหมดอายุวันไหน"){
 		   $reply_message = 'ฉันขอเลขที่ใบอนุญาตของคุณเพื่อทำการตรวจสอบ';
 	   }	   
-	    
+	   
+	   if($text == "อุณหภูมิตอนนี้กี่องศาเซลเซียส"){
+		   $reply_message = '25 มั้ง 55+';
+	   }
+	   
 	   $split_text = explode(" ", $text);
 	   //foreach ($split_text as $t){$reply_message = $t;}
 	   if (in_array("ฉันหาเลขใบอนุญาตของฉันไม่เจอ", $split_text)) { 
