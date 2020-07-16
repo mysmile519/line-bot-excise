@@ -61,7 +61,7 @@ if ( sizeof($request_array['events']) > 0 )
 	   }	   
 	   
 	   if($text == "อุณหภูมิตอนนี้" || $text == "ตอนนี้กี่องศา"){
-		   $reply_message = '25 มั้ง 55+';
+		   $reply_message = '<b><font color="blue"> 25</font></b> มั้ง 55+';
 	   }
 	   
 	   $split_text = explode(" ", $text);
